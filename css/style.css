@@ -1,0 +1,200 @@
+@font-face {
+  font-family: Open Sans;
+  src: url("../fonts/OpenSans-Bold.woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: ;
+  color: ;
+}
+
+.header {
+  background-image: url("../images/banner-bg.jpg");
+  width: 1660px;
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-transform: uppercase;
+  z-index: -1;
+}
+
+.header:before {
+  content: "";
+  position: absolute;
+  width: 1660px;
+  height: 450px;
+  background-color: #000000;
+  opacity: 0.6;
+
+  z-index: 0;
+}
+
+.top-panel {
+  display: flex;
+  flex-wrap: nowrap;
+
+  z-index: 1;
+}
+
+.header-logo {
+  width: 180px;
+  height: 35px;
+  margin-top: 35px;
+  margin-left: 250px;
+  z-index: 1;
+}
+
+.menu {
+	margin-top: 35px;
+	margin-left: 525px;
+	font-size: 13px;
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  list-style: none;
+}
+
+.menu-list-item {
+  z-index: 1;
+  color: white;
+}
+
+.menu-list-item:nth-child(n + 2) {
+  padding-left: 20px;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: white;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+
+  width: auto;
+  margin-top: 74.97px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  color: white;
+}
+
+.title {
+	font-family: Open Sans,sans-serif;
+	font-size: 45px;
+	line-height: 74.97px;
+
+	text-align: center;
+	z-index: 1;
+}
+
+
+
+
+
+
+
+
+/*
+
+<div class="intro">
+			<h1 class="title">Блог о творчестве, спорте и образе жизни</h1>
+		</div>
+
+
+
+.container {
+
+	display: flex;
+
+	background-image: url("../images/banner-bg.jpg");
+
+	width: 1660px;
+	height: 450px;
+
+ 	margin-left: auto;
+  	margin-right: auto;
+
+  	text-transform: uppercase;
+}
+
+.container:before {
+	content: "";
+	position: absolute;
+	width: 1660px;
+	height: 450px;
+	background-color: #000000;
+	opacity: 0.6;
+}
+
+.top-panel {
+	display: block;
+
+	width: 1660px;
+	height: 105px;
+
+	z-index: 1;
+}
+
+.header-logo {
+	
+
+	width: 180px;
+	height: 35px;
+
+	margin-left: 250px;
+}
+
+.menu {
+	
+	font-size: 13px;
+	margin-right: 245px;
+}
+
+.menu-list {
+	
+	list-style: none;
+}
+
+.menu-list-item {
+	
+	color: white;
+}
+
+.menu-list-item:nth-child(n+2) {
+	padding-left: 20px;
+	
+}
+
+.menu-link {
+	text-decoration: none;
+	color: white;
+}
+
+.intro {
+  display: flex;
+
+  
+  z-index: 1;
+
+}
+
+.title {
+  text-align: center;
+  color: white;
+  width: 1660px;;
+  
+  margin-top: 195px;
+  
+}
+	*/

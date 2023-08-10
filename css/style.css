@@ -50,9 +50,9 @@ body {
 }
 
 .menu {
-	margin-top: 35px;
-	margin-left: 525px;
-	font-size: 13px;
+  margin-top: 35px;
+  margin-left: 525px;
+  font-size: 13px;
 }
 
 .menu-list {
@@ -76,6 +76,10 @@ body {
   color: white;
 }
 
+.menu-link:hover {
+	text-decoration: underline;
+}
+
 .intro {
   display: flex;
   justify-content: center;
@@ -89,112 +93,196 @@ body {
   color: white;
 }
 
-.title {
-	font-family: Open Sans,sans-serif;
-	font-size: 45px;
-	line-height: 74.97px;
+.intro-title {
+  font-family: Open Sans, sans-serif;
+  font-size: 45px;
+  line-height: 74.97px;
 
-	text-align: center;
-	z-index: 1;
-}
-
-
-
-
-
-
-
-
-/*
-
-<div class="intro">
-			<h1 class="title">Блог о творчестве, спорте и образе жизни</h1>
-		</div>
-
-
-
-.container {
-
-	display: flex;
-
-	background-image: url("../images/banner-bg.jpg");
-
-	width: 1660px;
-	height: 450px;
-
- 	margin-left: auto;
-  	margin-right: auto;
-
-  	text-transform: uppercase;
-}
-
-.container:before {
-	content: "";
-	position: absolute;
-	width: 1660px;
-	height: 450px;
-	background-color: #000000;
-	opacity: 0.6;
-}
-
-.top-panel {
-	display: block;
-
-	width: 1660px;
-	height: 105px;
-
-	z-index: 1;
-}
-
-.header-logo {
-	
-
-	width: 180px;
-	height: 35px;
-
-	margin-left: 250px;
-}
-
-.menu {
-	
-	font-size: 13px;
-	margin-right: 245px;
-}
-
-.menu-list {
-	
-	list-style: none;
-}
-
-.menu-list-item {
-	
-	color: white;
-}
-
-.menu-list-item:nth-child(n+2) {
-	padding-left: 20px;
-	
-}
-
-.menu-link {
-	text-decoration: none;
-	color: white;
-}
-
-.intro {
-  display: flex;
-
-  
-  z-index: 1;
-
-}
-
-.title {
   text-align: center;
-  color: white;
-  width: 1660px;;
-  
-  margin-top: 195px;
-  
+  z-index: 1;
 }
-	*/
+
+.trends-section {
+  display: block;
+
+  width: 1660px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.trends {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  margin-top: 63px;
+}
+
+.trends-title {
+  font-size: 20px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #0f0d0e;
+  font-weight: 700;
+  font-family: "Open Sans";
+  margin-bottom: 15px;
+}
+
+.underlining {
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.4;
+  width: 66px;
+  height: 3px;
+  background-color: #b59f5b;
+}
+
+.trend-cards {
+  display: flex;
+  justify-content: space-between;
+  width: 1660px;
+  height: 320px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  display: flex;
+  float: left;
+
+  
+  position: relative;
+  background-color: #000000;
+  width: 414px;
+  height: 319px;
+  padding: 0;
+  margin: 0;
+}
+
+.card img {
+  width: 414px;
+  height: 319px;
+  opacity: 0.6;
+}
+
+.card:nth-child(n + 2) {
+  margin-left: 4px;
+}
+
+.description-block {
+  position: absolute;
+  width: 370px;
+  height: 146px;
+
+  box-sizing: border-box;
+
+  left: 0;
+  bottom: 0;
+
+  padding-left: 35px;
+  padding-right: 35px;
+
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+
+.description-block:hover {
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border: 3px solid #b59f5b;
+  margin-bottom: 18px;
+  padding-left: 32px;
+}
+
+.category {
+  display: inline-block;
+  width: auto;
+  height: auto;
+
+  padding-top: 20px;
+  font-size: 14px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #b59f5b;
+  font-weight: 700;
+  font-family: "Open Sans";
+}
+
+.category:nth-child(n + 2) {
+  padding-left: 20px;
+}
+
+.category:hover {
+  text-decoration: underline;
+}
+
+.title {
+  display: inline-block;
+  width: auto;
+  height: auto;
+
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Open Sans";
+}
+
+.title:hover {
+  color: #b59f5b;
+}
+
+.content {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+
+	width: 1170px;
+  	height: auto;
+
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.article {
+	
+
+	width: 300px;
+	height: auto;
+
+
+}
+.post {
+	display: inline-block;
+
+	width: 300px;
+	height: 100px;
+	
+
+	background-color: #58bd4f;
+}
+
+.aside {
+	
+
+	width: 300px;
+	height: auto;
+
+
+
+
+}
+
+.post1 {
+	display: inline-block;
+
+	width: 300px;
+	height: 100px;
+
+
+	background-color: #60e5d6;
+}

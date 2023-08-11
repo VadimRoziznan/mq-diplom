@@ -1,7 +1,14 @@
 @font-face {
-  font-family: Open Sans;
+  font-family: Open Sans Bold;
   src: url("../fonts/OpenSans-Bold.woff");
   font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Open Sans Regular;
+  src: url("../fonts/OpenSans-Regular.woff");
+  font-weight: Regular;
   font-style: normal;
 }
 
@@ -94,7 +101,7 @@ body {
 }
 
 .intro-title {
-  font-family: Open Sans, sans-serif;
+  font-family: Open Sans Bold, sans-serif;
   font-size: 45px;
   line-height: 74.97px;
 
@@ -124,7 +131,7 @@ body {
   text-transform: uppercase;
   color: #0f0d0e;
   font-weight: 700;
-  font-family: "Open Sans";
+  font-family: "Open Sans Bold";
   margin-bottom: 15px;
 }
 
@@ -208,7 +215,7 @@ body {
   text-transform: uppercase;
   color: #b59f5b;
   font-weight: 700;
-  font-family: "Open Sans";
+  font-family: "Open Sans Bold";
 }
 
 .category:nth-child(n + 2) {
@@ -229,7 +236,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 700;
-  font-family: "Open Sans";
+  font-family: "Open Sans Bold";
 }
 
 .title:hover {
@@ -246,43 +253,198 @@ body {
 
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 65px;
 }
 
-.article {
-	
+.post-list {
 
-	width: 300px;
+	width: 765px;
 	height: auto;
-
-
 }
+
 .post {
-	display: inline-block;
-
-	width: 300px;
-	height: 100px;
+	display: flex;
+	flex-flow: row nowrap;
+	width: auto;
+	height: auto;
 	
-
-	background-color: #58bd4f;
 }
 
-.aside {
-	
+.post img {
+	width: 381px;
+	height: 294px;
+	background-color: #eff6f1;
+}
 
-	width: 300px;
+.post:nth-child(n+2) {
+	margin-top: 60px;
+}
+
+.description {
+	display: block;
+	width: auto;
+	height: auto;
+	padding: 0;
+	margin: 0;
+}
+
+
+
+.post-category{
+	display: inline-block;
+	margin-top: 0;
+	padding-top: 0;
+	width: auto;
 	height: auto;
 
-
-
-
+	margin-left: 30px;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #b59f5b;
+	font-weight: 700;
+	font-family: "Open Sans Bold";
 }
 
-.post1 {
+.post-category:nth-child(n + 2){
+	margin-left: 20px;
+}
+
+.post-title {
+	display: block;
+	width: 367px;
+	height: auto;
+
+	margin-top: 10px;
+	margin-left: 30px;
+
+	font-size: 20px;
+	
+	text-transform: uppercase;
+	color: #0f0d0e;
+	font-weight: 700;
+	font-family: "Open Sans Bold";
+}
+
+.post-date {
 	display: inline-block;
 
-	width: 300px;
-	height: 100px;
+	margin-top: 30px;
+	margin-left: 30px;
+
+	font-size: 12px;
+	color: #888888;
+	font-weight: 400;
+	font-family: "Open Sans Regular";
+}
+
+.post-autor {
+	display: inline-block;
+
+	margin-top: 30px;
+	margin-left: 15px;
 
 
-	background-color: #60e5d6;
+	font-size: 12px;
+	color: #000000;
+	font-weight: 700;
+	font-family: "Open Sans Bold";
+} 
+
+.post-text {
+	display: inline-block;
+
+	width: 367px;
+	height: auto;
+
+	margin-top: 50px;
+	margin-left: 30px;
+	bottom: 0;
+
+
+	font-size: 15px;
+	line-height: 22px;
+	color: #0f0d0e;
+	font-family: "Open Sans Regular";
+}
+
+.post-text:nth-of-type(2) {
+
+	margin-top: 20px;
+}
+
+.side-bar-aside {
+	width: 275px;
+	height: auto;
+}
+
+
+.side-bar-headline {
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 14px;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #0f0d0e;
+	font-weight: 700;
+	font-family: "Open Sans Bold";
+}
+
+.new-publication {
+	display: flex;
+	flex-flow: row nowrap;
+	width: auto;
+	height: auto;
+	
+}
+
+.new-publication img {
+	width: 70px;
+height: 70px;
+background-color: #f4f7f6;
+}
+
+.new-publication:nth-child(n+2) {
+	margin-top: 22px;
+}
+
+.side-bar-description {
+	display: block;
+	
+	width: auto;
+	height: auto;
+	padding: 0;
+	margin: 0;
+}
+
+.side-bar-date {
+	display: inline-block;
+	
+	margin-top: 0;
+	padding-top: 0;
+	width: 100px;
+	height: auto;
+	margin-left: 18px;
+
+
+	opacity: 0.541;
+	font-size: 12px;
+	color: #000000;
+	font-weight: 400;
+	font-family: "Open Sans Regular";
+}
+
+.side-bar-title {
+	display: block;
+	
+	width: 185px;
+	height: auto;
+	text-align: left;
+	
+	margin-left: 18px;
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: 700;
+	font-family: "Open Sans Bold";
 }

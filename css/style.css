@@ -21,8 +21,7 @@ body {
   background-image: url("../images/banner-bg.jpg");
   width: 1660px;
   height: 450px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 
   text-transform: uppercase;
   z-index: -1;
@@ -49,14 +48,13 @@ body {
 .header-logo {
   width: 180px;
   height: 35px;
-  margin-top: 35px;
-  margin-left: 250px;
+  margin: 35px 0 0 250px;
+
   z-index: 1;
 }
 
 .menu {
-  margin-top: 35px;
-  margin-left: 525px;
+  margin: 35px 0 0 525px;
   font-size: 13px;
 }
 
@@ -102,11 +100,9 @@ body {
 
 .trends-section {
   display: block;
-
   width: 1660px;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 
 .trend {
@@ -123,35 +119,32 @@ body {
 
 
 .underlining {
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  opacity: 0.4;
-  width: 66px;
+	margin: 0 auto 20px auto;
+    width: 66px;
   height: 3px;
+
+  opacity: 0.4;
   background-color: #b59f5b;
 }
 
 .trend-cards {
   display: flex;
-  justify-content: space-between;
   width: 1660px;
   height: 320px;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 30px auto 0 auto;
+  justify-content: space-between;
 }
 
 .card {
   display: flex;
   float: left;
-
-  position: relative;
-  background-color: #000000;
   width: 414px;
   height: 319px;
   padding: 0;
   margin: 0;
+  position: relative;
+
+  background-color: #000000;
 }
 
 .card img {
@@ -179,10 +172,10 @@ body {
 
 .info-block:hover {
   box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0);
-  border: 3px solid #b59f5b;
-  margin-bottom: 18px;
+    margin-bottom: 18px;
   padding-left: 32px;
+  border: 3px solid #b59f5b;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .category {
@@ -190,9 +183,7 @@ body {
   width: auto;
   height: auto;
 
-  
   font-size: 14px;
-  
   text-transform: uppercase;
   color: #b59f5b;
   font-weight: 700;
@@ -227,12 +218,10 @@ body {
 
 .content {
   display: flex;
+    width: 1170px;
+  height: auto;
   flex-flow: row nowrap;
   justify-content: space-between;
-
-  width: 1170px;
-  height: auto;
-
   margin: 65px auto 60px auto;
 }
 
@@ -288,7 +277,6 @@ body {
 .date {
   display: inline-block;
   
-  
   font-size: 12px;
   color: #888888;
   font-weight: 400;
@@ -326,8 +314,8 @@ body {
 }
 
 .headline {
-
 	margin: 0 auto 12px auto;
+
   font-size: 14px;
   text-transform: uppercase;
   color: #0f0d0e;
@@ -339,7 +327,6 @@ body {
   flex-flow: row nowrap;
   width: auto;
   height: auto;
-  
 }
 
 .new-publication img {
@@ -354,12 +341,10 @@ body {
 
 .side-bar-description {
   display: block;
-
   width: auto;
   height: auto;
   padding: 0;
-  margin: 0;
-  margin-left: 15px;
+  margin: 0 0 0 15px;
 }
 
 
@@ -381,8 +366,8 @@ body {
   flex-wrap: wrap;
   width: 270px;
   height: 48px;
+  margin: 60px auto 60px auto;
 
-  margin-top: 60px;
   background-color: #f4f7f6;
 }
 
@@ -391,6 +376,11 @@ body {
   width: 222px;
   height: 48px;
 
+    display: inline-block;
+  vertical-align: middle;
+  padding-left: 18px;
+  border: none;
+
   opacity: 0.541;
   font-size: 13px;
   line-height: 40px;
@@ -398,12 +388,7 @@ body {
   font-weight: 400;
   font-family: "Open Sans Regular";
 
-  display: inline-block;
-  vertical-align: middle;
 
-  padding-left: 18px;
-
-  border: none;
 }
 
 .search_field:focus {
@@ -444,10 +429,8 @@ body {
   background-color: #323232;
 }
 
-.side-bar-title-box {
-  margin: 60px auto 0 auto;
-  width: auto;
-  height: auto;
+.subscribe {
+	margin: 0 auto 60px auto;
 }
 
 .email_field {
@@ -508,16 +491,18 @@ body {
   outline-offset: none;
 }
 
+.tags_block {
+	margin: 0 auto 60px auto;
+}
+
 .tag_block {
   display: inline-block;
   width: auto;
   height: 30px;
-
+  border: 3px solid #eeeeee;
   margin-top: 25px;
 
   background-color: rgba(244, 243, 241, 0);
-
-  border: 3px solid #eeeeee;
 }
 
 .tag_block:nth-child(n + 3) {
@@ -529,7 +514,6 @@ body {
   align-items: center;
   width: auto;
   height: inherit;
-
   padding: 0 12px 0 12px;
 
   font-size: 12px;
@@ -579,23 +563,16 @@ sup {
   font-family: "Open Sans Bold";
 }
 
-.side-bar-title-box {
-	display: flex;
-  width: 1165px;
-  height: auto;
-  margin: auto;
+.shop {
+	font-size: 20px;
+line-height: 29px;
 }
-
 
 .products-box {
   display: flex;
   width: 1165px;
   height: auto;
-
-  margin-top: 25px;
-  margin-left: auto;
-  margin-right: auto;
-
+  margin: 25px auto 0 auto;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
@@ -639,9 +616,7 @@ sup {
   display: block;
   width: 300px;
   height: 204px;
-
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 0 auto;
 
   background-image: url("../images/shop-item-desk1.jpg");
   background-color: #eff6f1;
@@ -651,9 +626,7 @@ sup {
   display: block;
   width: 300px;
   height: 204px;
-
-  margin-left: auto;
-  margin-right: auto;
+	margin: 0 auto 0 auto;
 
   background-image: url("../images/shop-item-desk2.jpg");
   background-color: #eff6f1;
@@ -663,9 +636,7 @@ sup {
   display: block;
   width: 300px;
   height: 204px;
-
-  margin-left: auto;
-  margin-right: auto;
+	margin: 0 auto 0 auto;
 
   background-image: url("../images/shop-item-desk3.jpg");
   background-color: #eff6f1;
@@ -691,9 +662,7 @@ sup {
   display: block;
   width: 300px;
   height: auto;
-
-  margin-top: 8px;
-  margin-bottom: 20px;
+	margin: 8px 0 20px 0;
 
   font-size: 15px;
   line-height: 22px;
@@ -750,10 +719,8 @@ sup {
 
 .in-shop {
   display: flex;
-
   justify-content: center;
   align-items: center;
-
   width: 140px;
   height: 48px;
 
@@ -777,10 +744,8 @@ sup {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-
   width: 1170px;
   height: 83px;
-
   margin: 65px auto 0 auto;
 
   background-color: #f4f7f6;
@@ -789,10 +754,8 @@ sup {
 .icon {
   display: inline-block;
   box-sizing: border-box;
-
   width: 20px;
   height: 20px;
-
   margin: 0 30px 0 0;
 }
 
@@ -800,7 +763,6 @@ sup {
   display: flex;
   justify-content: center;
   align-items: center;
-
   margin: 70px auto 40px auto;
 }
 

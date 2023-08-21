@@ -57,8 +57,8 @@
 
 ## Требования
 
-1. [Этап 1. Стационарная версия](./requirements_step-1.md)
-2. [Этап 2. Адаптивная версия + всплывающая форма](./requirements_step-2.md)
+1. [Этап 1. Стационарная версия](https://github.com/netology-code/fpymq-diploma/blob/01-logic/requirements_step-1.md)
+2. [Этап 2. Адаптивная версия + всплывающая форма](https://github.com/netology-code/fpymq-diploma/blob/01-logic/requirements_step-2.md)
 
 ## Рекомендации
 

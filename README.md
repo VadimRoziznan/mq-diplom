@@ -35,11 +35,11 @@
 
 ## Исходные файлы
 
-1. PSD-макеты в папке [./sources/psd](./sources/psd)
-2. JPG версии макетов для быстрого просмотра в папке [./sources/preview](./sources/preview/)
-3. Фоновые и контентные изображения в [./sources/img](./sources/img/)
-4. Файлы шрифтов папке [./sources/fonts](./sources/fonts/)
-5. SVG-иконки в папке [./sources/svg](./sources/svg/)
+1. PSD-макеты в папке [./sources/psd](https://github.com/netology-code/fpymq-diploma/tree/01-logic/sources/psd)
+2. JPG версии макетов для быстрого просмотра в папке [./sources/preview](https://github.com/netology-code/fpymq-diploma/tree/01-logic/sources/preview)
+3. Фоновые и контентные изображения в [./sources/img](https://github.com/netology-code/fpymq-diploma/tree/01-logic/sources/img)
+4. Файлы шрифтов папке [./sources/fonts](https://github.com/netology-code/fpymq-diploma/tree/01-logic/sources/fonts)
+5. SVG-иконки в папке [./sources/svg](https://github.com/netology-code/fpymq-diploma/tree/01-logic/sources/svg)
 
 ## С чего начать?
 

@@ -10,7 +10,7 @@
 
 Макеты выглядят так:
 
-![Layout](img/layouts.jpg)
+![Layout](https://github.com/netology-code/fpymq-diploma/blob/01-logic/img/layouts.jpg?raw=true)
 
 ## Зачем?
 

@@ -12,6 +12,11 @@
   font-style: normal;
 }
 
+body {
+	width: auto;
+	height: auto;
+}
+
 .header {
   background-image: url("../images/banner-bg.jpg");
   width: 1660px;
@@ -440,7 +445,9 @@
 }
 
 .side-bar-title-box {
-  margin-top: 60px;
+  margin: 60px auto 0 auto;
+  width: auto;
+  height: auto;
 }
 
 .email_field {
@@ -571,6 +578,14 @@ sup {
   font-weight: 700;
   font-family: "Open Sans Bold";
 }
+
+.side-bar-title-box {
+	display: flex;
+  width: 1165px;
+  height: auto;
+  margin: auto;
+}
+
 
 .products-box {
   display: flex;

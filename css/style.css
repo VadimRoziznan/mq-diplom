@@ -90,10 +90,12 @@ body {
 	display: flex;
 	justify-content: center;
 	text-align: center;
-	width: auto;
+	width: 690px;
 	height: auto;
 	position: relative;
-	margin: 103px auto 0 auto;
+	margin: 100px auto 0 auto;
+	font-size: 45px;
+	line-height: 75px;
 	font-family: Open Sans Bold, sans-serif;
 	font-size: 45px;
 	line-height: 74px;
@@ -370,9 +372,6 @@ p {
 
 
 .publication-title {
-	display: flex;
-	justify-content: center;
-	text-align: center;
 	width: auto;
 	height: auto;
 	display: flex;
@@ -796,9 +795,9 @@ sup {
 	.header {
 		width: 773px;
 		height: 395px;
+		background-size: contain;
+		
 		background-image: url("../images/banner-bg-tablet.jpg");
-		background-size: cover;
-		background-position: center;
   	}
 
 	.header:before {
@@ -873,9 +872,6 @@ sup {
     	visibility: visible;
 	}
 	
-}
-
-@media (min-width: 768px) and (max-width: 999px) {
 	.trends-section{
 		width: 773px;
 		height: auto;	
@@ -896,13 +892,12 @@ sup {
 
 	.card:nth-child(n + 2) {
 	margin: 0 0 4px 0;
-}
+	}
 
 	.card img,
 	.card {
 		width: 382px;
 		height: 247px;
-
 	}
 
 	.info-block {
@@ -992,25 +987,153 @@ sup {
 	}
 
 	.products-box {
-	justify-content: space-between;
-	width: 670px;
-	height: auto;
-	margin: 30px auto 0 auto;
-	flex-wrap: wrap;
+		justify-content: space-between;
+		width: 670px;
+		height: auto;
+		margin: 30px auto 0 auto;
+		flex-wrap: wrap;
 	}
 
 	.product {
-	width: 300px;
-	height: 450px;
-	position: relative;
-	margin: 0 0 0 0;
+		width: 300px;
+		height: auto;
+		position: relative;
+		margin: 0 0 255px 5px;
+	}
+
+	.product:last-of-type {
+		margin: 0 0 0 5px;
 	}
 
 	.product-img {
 		width: 292px;
 		height: 226px;
 		background-color: #eff6f1;
-		
 	}
 
+	.product-title {
+		font-size: 17px;
+	}
+
+	.product-text {
+		width: 291px;
+		font-size: 15px;
+		line-height: 22px;
+	}
+
+	.in-shop {
+		margin-right: 10px;
+	}
+
+	.border {
+		top: 187px;
+	}
+
+	.border::before {
+		width: 335px;
+	}
+
+	.footer {
+		margin-top: 260px;
+	}
+
+	.social {
+		width: 698px;
+		height: 82px;
+		margin: 56px auto 0 auto;
+	}
+
+	.copyrights {
+		margin: 37px auto 40px auto;
+	}
+
+}
+
+@media (max-width: 767px) {
+	.header {
+		width: 360px;
+		height: 635px;
+		background-image: url("../images/banner-mobile.jpg");
+		background-size: cover;
+		background-position: center;
+  	}
+
+  	.header:before {
+		width: 360px;
+		height: 635px;
+	}
+
+	.intro-title {
+		margin: 0 auto 0 auto;
+		width: 328px;
+		height: auto;
+		font-size: 26px;
+		line-height: 36px;
+	}
+
+
+	.header-logo {
+		display: flex;
+		box-sizing: border-box;
+		justify-content: center;
+	    width: 328px;
+	    height: 60px;
+	    margin: 225px auto 35px auto;
+	}
+
+	.menu {
+		display: flex;
+		flex-direction: column-reverse;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+
+		width: 328px;
+		position: absolute;
+		margin: 30px 0 0 0;
+	}
+
+	.menu-button {
+  		display: inline-block;
+  		box-sizing: border-box;
+  		position: absolute;
+
+		width: 23px;
+		height: 3px;
+		margin: 0 0 0 335px;
+
+
+		color: white;
+		border: none;
+		background-color: #ffffff;	
+  	}
+  	.menu-button:before,
+  	.menu-button:after {
+  		content: "";
+  		
+  		box-sizing: border-box;
+  		position: absolute;
+  		left: 0;
+
+  		margin: 8px 0 8px 0;
+		width: 23px;
+		height: 3px;
+		color: white;
+		border: none;
+		background-color: #ffffff;	
+  	}
+
+  	.menu-button:after {
+    	bottom: 0;
+	}
+
+	.menu:hover .menu-list{
+    	visibility: visible;
+	}
+
+	.menu-list {
+		padding: 0 0 0 0;
+    	margin: 0 210px 0 0;
+    	visibility: hidden;
+  	}
 }

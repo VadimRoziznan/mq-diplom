@@ -10,10 +10,10 @@
 
 <body>
   	<header class="header">
+
     	<div class="top-panel">
       		<img src="svg/noemi-logo.svg" class="header-logo" alt="Логотип компании Noemi">
       		<nav class="menu">
-      			
           		<ul class="menu-list">
             		<li class="menu-list__item">
               			<a class="menu-link" href="#">Главная</a>
@@ -36,10 +36,9 @@
           		</ul>
           		<button type="button" class="menu-button"></button>
         	</nav>
-
     	</div>
     	<div class="container">
-        	<h1 class="intro-title">Блог о творчестве, спорте,<br> и образе жизни</h1>
+        	<h1 class="intro-title">Блог о творчестве, спорте, и образе жизни</h1>
      	</div>
 	</header>
   <main>
@@ -191,19 +190,17 @@
           <div class="underlining"></div>
         </div>
         <div class="new-publications">
-
           	<img src="images/2.jpg">
           	<div class="side-bar-description">
             	<div class="date">14 июня 2019</div>
             	<a href="#" class="publication-title">10 мест, ради которых стоит проснуться</a>
           	</div>
-
         </div>
         <div class="new-publications">
           <img src="images/151.jpg">
           <div class="side-bar-description">
-            <span class="date">14 июня 2019</span>
-            <span class="publication-title">Йога для домашних</span>
+          	<div class="date">14 июня 2019</div>
+            <a href="#" class="publication-title">Йога для домашних</a>
           </div>
         </div>
         <div class="new-publications">
@@ -315,14 +312,11 @@
     </div>
     <div class="products-box">
       <div class="product">
-        <img
-        	src="images/shop-item-desk1.jpg"  
-        	srcset="images/shop-item-mobile1.jpg 768w,
-        			images/shop-item-tablet1.jpg 292w,
-        			images/shop-item-desk1.jpg 300w"
-        	sizes="(max-width: 999px) 292px,
-        			(max-width: 1200px) 300px"
-        	class="product-img">
+      	<picture>
+      		<source srcset="images/shop-item-mobile1.jpg" media="(max-width: 767px)">
+      		<source srcset="images/shop-item-tablet1.jpg" media="(max-width: 999px)">
+        	<img src="images/shop-item-desk1.jpg" class="product-img">
+        </picture>
         <div class="border">
           <div class="product-description">
             <span class="product-title">Подушки на диван</span>
@@ -340,7 +334,11 @@
         </div>
       </div>
       <div class="product">
-        <img src="images/shop-item-desk2.jpg" class="product-img">
+      	<picture>
+      		<source srcset="images/shop-item-mobile2.jpg" media="(max-width: 767px)">
+      		<source srcset="images/shop-item-tablet2.jpg" media="(max-width: 999px)">
+        	<img src="images/shop-item-desk2.jpg" class="product-img">
+        </picture>
         <div class="border">
           <div class="product-description">
             <span class="product-title">Кукла «Зайчик»</span>
@@ -358,7 +356,11 @@
         </div>
       </div>
       <div class="product">
-        <img src="images/shop-item-desk3.jpg" class="product-img">
+      	<picture>
+      		<source srcset="images/shop-item-mobile3.jpg" media="(max-width: 767px)">
+      		<source srcset="images/shop-item-tablet3.jpg" media="(max-width: 999px)">
+        	<img src="images/shop-item-desk3.jpg" class="product-img">
+        </picture>
         <div class="border">
           <div class="product-description">
             <span class="product-title">Шестиугольная рамка</span>

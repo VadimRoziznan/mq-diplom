@@ -1049,7 +1049,7 @@ sup {
 
 }
 
-@media (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
 	.header {
 		width: 360px;
 		height: 635px;

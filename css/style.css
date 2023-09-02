@@ -801,11 +801,12 @@ sup {
   	}
 
 	.header:before {
-		width: 773px;
+		width: 360px;
 		height: 395px;
 	}
 
 	.intro-title {
+		width: 650px;
 		margin: 90px auto 0 auto;
 		font-size: 40px;
 		line-height: 55px;
@@ -1050,6 +1051,7 @@ sup {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+
 	.header {
 		width: 360px;
 		height: 635px;
@@ -1136,4 +1138,45 @@ sup {
     	margin: 0 210px 0 0;
     	visibility: hidden;
   	}
+
+  	.trend-title {
+  		font-size: 16px;
+  		margin: 35px auto 5px auto;
+  	}
+
+  	.underlining {
+    	margin: 0 auto 24px auto;
+    }
+
+  	.trends-section {  
+	    width: 360px;
+	}
+
+	.trend-cards {
+	    width: 361px;
+	    flex-wrap: wrap;
+	    margin: 0 0 0 0;
+	}
+
+	.card:nth-child(n + 1) {
+	margin: 0 0 2px 0;
+	}
+
+	.card {
+		width: 361px;
+		height: 232px;
+	}
+
+	.card img {
+		object-fit: cover;
+		object-position: bottom;
+		
+		width: 361px;
+		height: 232px;
+
+		
+		
+
+	}
 }
+

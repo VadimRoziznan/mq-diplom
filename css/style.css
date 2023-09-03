@@ -453,6 +453,15 @@ p {
 	margin: 0 auto 60px auto;
 }
 
+.email {
+	display: flex;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	width: 329px;
+	height: 48px;
+	background-color: #f4f7f6;
+}
+
 .email-field {
 	display: inline-block;
 	box-sizing: border-box;
@@ -461,13 +470,13 @@ p {
 	padding: 0 0 0 15px;
 	margin: 0 0 15px 0;
 	vertical-align: middle;
-	background-color: #f4f7f6;
 	border: none;
 	opacity: 0.541;
 	font-size: 13px;
 	line-height: 40px;
 	color: #000000;
 	font-family: Open Sans Regular;
+	background-color: #f4f7f6;
 }
 
 .email-field:focus {
@@ -533,6 +542,7 @@ p {
 	background-color: rgba(244,243,241,0);
 	border: 3px solid #eeeeee;
 	font-size: 12px;
+	line-height: 40px;
 	text-transform: uppercase;
 	color: #0f0d0e;
 	font-weight: 700;
@@ -1321,13 +1331,108 @@ sup {
 	.search {
 		flex-wrap: nowrap;
 		width: 330px;
-		margin: 60px auto 60px auto;
+		margin: 60px auto 35px auto;
 	}
 
 	.search-field {
 		width: 282px;
 		margin: 0 auto 0 auto;
 		padding: 0 0 0 17px;	
+	}
+
+	.email{
+		margin: 0 16px 0 16px;
+	}
+
+	.email-field {
+		width: 329px;
+		height: 48px;
+		margin: 0 0 17px 0;
+		padding: 0 0 0 17px;
+	}
+
+	.email-button {
+		width: 330px;
+		height: 48px;
+	}
+	.tags-block {
+		margin: 102px auto 32px auto;
+	}
+
+	.tags-list {
+		width: 333px;
+		margin: 0 15px 0 15px;
+	}
+
+	.tag-name {
+		width: auto;
+		height: 30px;
+		margin: 0 0 5px 0;
+		padding: 0 14px 0 14px;
+	}
+
+	.tag-name__link {
+		height: 26px;
+		padding: 0 0 0 0;
+	}
+
+	.themse-list{
+		margin-top: -3px;
+	}
+	.themse-name {
+		width: 330px;
+		height: 35px;
+		padding: 0 0 0 0;
+		margin: 0 15px 0 15px;
+	}
+
+	.themse-name:nth-child(n+2) {
+		margin: 12px 15px 0 15px;
+	}
+
+	sup {
+		margin: 0 0 0 5px;
+	}
+
+	.shop-title {
+		font-size: 16px;
+		line-height: 29px;
+		margin: -21px 0 5px 0;
+	}
+
+	.products-box {
+		width: 330px;
+		flex-wrap: wrap;
+	}
+
+	.product {
+		display: block;
+		width: 300px;
+		height: 450px;
+		position: relative;
+		margin: 0 0 90px 0;
+	}
+
+	.product img {
+		width: 285px;
+		height: 285px;
+	}
+
+	.border {
+		position: absolute;
+		left: -15px;
+		top: 253px;
+		height: 214px;
+	}
+
+	.border::before {
+		content: "";
+		position: absolute;
+		width: 330px;
+		height: 220px;
+		border: 3px solid transparent;
+		pointer-events: none;
+		border-color: #b59f5b;
 	}
 }
 

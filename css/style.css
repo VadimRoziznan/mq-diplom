@@ -1052,6 +1052,10 @@ sup {
 
 @media (min-width: 320px) and (max-width: 767px) {
 
+	html {
+		max-width: 360px;
+	}
+
 	.header {
 		width: 360px;
 		height: 635px;
@@ -1173,10 +1177,158 @@ sup {
 		
 		width: 361px;
 		height: 232px;
+	}
 
-		
-		
 
+
+	.info-block {
+
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: end;
+		width: 285px;
+		height: auto;
+		bottom: 0;
+		margin: 0 15px 15px 15px;
+		padding: 25px 20px 28px 20px;
+	}
+
+	.categories {
+		margin: 0 0 10px 0;
+	}
+
+	.preface {
+		margin: 0 0 0 0;
+	}
+
+	.preface__item {
+		display: contents;
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	.article {
+		width: 360px;
+	}
+
+	.content {
+    display: flex;
+    width: 360px;
+    height: auto;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 42px auto 60px auto;
+	}
+
+	.post {
+		flex-flow: row wrap;
+		width: 328px;
+		margin: 0 16px 0 16px;
+	}
+
+	.post img {
+	
+		width: 328px;
+		height: 253px;
+	}
+
+	.post:nth-child(n + 2) {
+		margin-top: 37px;
+	}
+
+	.description {
+		margin: 13px 0 0 0;
+	}
+
+	.annotation {
+		width: 327px;
+		font-size: 16px;
+		line-height: 20px;
+		margin: 0 0 15px 0;
+	}
+
+	.text {
+		width: 327px;
+		height: auto;
+		font-size: 14px;
+		line-height: 20px;
+		margin: 10px 0 20px 0;
+	}
+
+	.underline {
+		display: block;
+		width: 329px;
+		height: 3px;
+		margin: 0 auto 0 auto;
+		background-color: #eeeeee;
+	}
+
+	p {
+    margin-block-start: 5px;
+    margin-block-end: 0;
+	}
+
+	.paragraph {
+		display: inline-block;
+		box-sizing: border-box;
+		width: 327px;
+		
+	}
+
+	.side-bar-aside {
+		width: 360px;
+		margin: 35px 0 0 0;
+	}
+
+	.headline-title {
+		font-size: 16px;
+		line-height: 29px;
+		margin: 0 auto 5px auto;
+	}
+
+	.new-publications {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 360px;
+    height: 70px;
+    margin: 5px auto 0 auto;
+    padding-top: 5px;
+	}
+
+	.new-publications:nth-child(n+2) {
+    margin: 17px 0 0 0;
+	}
+
+	.new-publications img {
+		margin-left: 16px;
+	}
+
+	.publication-title{
+		width: auto;
+		margin: 2px 0 0 -3px;
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	.date {
+		margin-left: -4px;
+	}
+
+	.side-bar-description {
+		margin: -5px 0 0 12px;
+	}
+
+	.search {
+		flex-wrap: nowrap;
+		width: 330px;
+		margin: 60px auto 60px auto;
+	}
+
+	.search-field {
+		width: 282px;
+		margin: 0 auto 0 auto;
+		padding: 0 0 0 17px;	
 	}
 }
+
 

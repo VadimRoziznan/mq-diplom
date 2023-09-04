@@ -37,6 +37,110 @@ body {
 	z-index: 0;
 }
 
+.popup {
+	visibility: visible;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+  background-color: rgba(0, 0, 0, 0.75);
+  overflow-y: auto;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  z-index: 999;
+}
+
+.popup__container {
+  width: 390px;
+	height: 589px;
+
+  margin: 193px auto 0 635px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.feedback {
+	width: 390px;
+	height: 30px;
+	margin: 0 auto 0 auto;
+	margin-block-start: 45px;
+	margin-block-end: 5px;
+}
+
+.feedback-title {
+	display: block;
+	box-sizing: border-box;
+	width: 145px;
+	height: 30px;
+	font-size: 20px;
+	line-height: 29px;
+	text-transform: uppercase;
+	color: #0f0d0e;
+	font-family: Open Sans Bold, sans-serif;
+	margin: 0 auto 10px auto;
+	
+}
+
+.form-block {
+	margin: 25px 0 -5px 30px;
+}
+
+.select-label {
+	display: block;
+	box-sizing: border-box;
+	height: 10px;
+	font-size: 13px;
+	line-height: 40px;
+	color: #000000;
+	text-transform: none;
+	font-family: Open Sans Regular, sans-serif;
+	margin: 0 0 25px 0;
+
+}
+
+.select {
+	width: 330px;
+	height: 48px;
+	background-color: #f4f7f6;
+	border: none;
+	opacity: 0.541;
+	font-size: 13px;
+	color: #000000;
+	font-family: Open Sans Regular, sans-serif;
+	padding: 0 0 0 20px;
+
+	 -webkit-appearance: none;
+  -mox-appearance: none;
+  background-image: url("../svg/form-arrows.svg");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 10px;
+}
+
+.select:focus,
+.select:hover {
+	width: 330px;
+	height: 48px;
+	background-color: #f4f7f6;
+	border: 1px solid #b59f5b;
+}
+
+.answer {
+	display: inline-block;
+	width: 20px;
+	font-size: 13px;
+	color: #000000;
+	text-transform: capitalize;
+	font-family: Open Sans Regular, sans-serif;
+	margin: -5px 0 0 0;
+}
+
+
 .top-panel {
 	display: flex;
 	flex-wrap: nowrap;
@@ -1355,6 +1459,11 @@ sup {
 		width: 330px;
 		height: 48px;
 	}
+
+	.email-button:hover {
+		width: 330px;
+	}
+
 	.tags-block {
 		margin: 102px auto 32px auto;
 	}

@@ -11,13 +11,13 @@
 <body>
   	<header class="header">
       <div class="popup">
-        <div class="popup__container">
+        <div class="popup-container">
           <div class="feedback">
             <h2 class="feedback-title">Ваш ФИДБЕк</h2>
             <div class="underlining"></div>
           </div>
           <div class="form-block">
-            <form class="form">
+            <form id="popup" class="popup-form">
               <div class="form-group">
                 <label class="select-group">
                   <span class="select-label"> Как часто вы заходите на сайт?</span>
@@ -31,19 +31,36 @@
           </div>
           <div class="form-block">
             <div class="form-group">
-              <form class="form">
+              <form id="popup" class="popup-form">
                 <span class="select-label">Вы подписаны на e-mail рассылку?</span>
-                <label class="radio-label">
-                  <input type="radio" class="input-block" name="answer-yes">
-                  
-                </label>
-                <span class="answer">Да</span>
-                <label class="radio-label">
-                  <input type="radio" class="input-block" name="answer-no">
-                </label>
-                <span class="answer">Нет</span>
+                <div class="label-block">
+		            
+		          	<label class="radio-label">
+		          		<input type="radio" name="radio-answer" class="input-block" value="yes">
+		          		<span class="answer">Да</span>
+		          	</label>
+		          	<label class="radio-label">
+		          		<input type="radio" name="radio-answer" class="input-block" value="no">
+		          		<span class="answer">Нет</span>
+		          	</label>
+                </div>
               </form>
             </div>
+          </div>
+          <div class="form-block">
+          	<form id="popup" class="popup-form">
+          		<div class="form-group">
+          			<span class="select-label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+          			<label>
+    				<textarea class="text-block" name="comment" cols="40" rows="3" placeholder="Может, больше рецептов?"></textarea>
+  					</label>
+          		</div>
+          	</form>
+          </div>
+          <div class="form-block">
+          	<button id="popup" class="form-button" type="submit">
+          		<span class="button-text">Отправить</span>
+          	</button>
           </div> 
         </div>
       </div>

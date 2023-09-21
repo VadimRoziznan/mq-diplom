@@ -9,27 +9,45 @@
   src: url("../fonts/OpenSans-Regular.woff");
   font-style: normal;
 }
+
+
 body {
-  width: auto;
+  width: 100%;
+  min-width: 1660px;
   height: auto;
+
   margin: 0;
+ 
+}
+
+h1 {
+	margin: 0;
 }
 .header {
-  width: 1660px;
-  height: 450px;
+  width: 100%;
+  min-width: 1660px;
+  /*height: 450px;*/
+  min-height: 450px;
   margin: 0 auto;
   text-transform: uppercase;
   background-image: url("../images/banner-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
   z-index: -1;
 }
 .header:before {
   content: "";
   position: absolute;
-  width: 1660px;
-  height: 450px;
+  width: 100%;
+  min-width: 1660px;
+  /*height: 450px;*/
+  min-height: 450px;
   background-color: #000000;
   opacity: 0.6;
   z-index: 0;
+  
 }
 .popup {
   visibility: hidden;
@@ -168,6 +186,7 @@ body {
 }
 .top-panel {
   display: flex;
+  justify-content: space-between;
   flex-wrap: nowrap;
   z-index: 1;
 }
@@ -191,6 +210,7 @@ body {
 }
 .menu-list {
   display: flex;
+  margin-right: 150px;
   list-style: none;
 }
 .menu-list__item {
@@ -205,6 +225,13 @@ body {
 }
 .menu-link:hover {
   text-decoration: underline;
+}
+main {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 .intro-title {
   display: flex;
@@ -223,7 +250,8 @@ body {
 }
 .trends-section {
   display: block;
-  width: 1660px;
+  width: 100%;
+  min-width: 1660px;
   height: auto;
   margin: auto;
 }
@@ -250,7 +278,9 @@ body {
 }
 .trend-cards {
   display: flex;
-  width: 1660px;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 1660px;
   height: auto;
   margin: 30px auto 0 auto;
 }
@@ -262,6 +292,7 @@ body {
   display: flex;
   float: left;
   width: 410px;
+
   height: 319px;
   background-color: #000000;
 }
@@ -827,14 +858,27 @@ sup {
   font-family: "Open Sans Bold";
 }
 @media (min-width: 768px) and (max-width: 999px) {
+
+	body {
+		width: 100%;
+		min-width: 768px;
+		height: auto;
+		margin: 0;
+	}
+
   .header {
-    width: 773px;
+    width: 100%;
+    min-width: 768px;
     height: 395px;
     background-size: contain;
     background-image: url("../images/banner-bg-tablet.jpg");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   }
   .header:before {
-    width: 773px;
+   	width: 100%;
+    min-width: 768px;
     height: 395px;
   }
   .intro-title {
@@ -894,7 +938,8 @@ sup {
     visibility: visible;
   }
   .trends-section {
-    width: 773px;
+  	width: 100%;
+    min-width: 773px;
     height: auto;
   }
   .trend-title {
@@ -902,7 +947,8 @@ sup {
     margin: 40px auto 7px auto;
   }
   .trend-cards {
-    width: 773px;
+  	width: 100%;
+  	min-width: 773px;
     height: auto;
     margin: 20px auto 0 auto;
     flex-wrap: wrap;
@@ -1038,12 +1084,27 @@ sup {
     margin: 37px auto 40px auto;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   html {
     max-width: 360px;
   }
+	body {
+		min-width: 100vw;
+		width: 360px;
+		height: auto;
+		margin: 0;
+	}
+	main {
+	display: block;
+	box-sizing: border-box;
+	width: 360px;
+    min-width: 360px;
+	margin-left: auto;
+	margin-right: auto;
+}
   .header {
-    width: 360px;
+  	width: 360px;
+    min-width: 360px;
     height: 635px;
     background-image: url("../images/banner-mobile.jpg");
     background-size: cover;
@@ -1051,6 +1112,7 @@ sup {
   }
   .header:before {
     width: 360px;
+    min-width: 360px;
     height: 635px;
   }
   .intro-title {
@@ -1121,10 +1183,12 @@ sup {
     margin: 0 auto 24px auto;
   }
   .trends-section {
-    width: 360px;
+  	width: 100%;
+    min-width: 360px;
   }
   .trend-cards {
-    width: 361px;
+  	width: 100%;
+  	min-width: 361px;
     flex-wrap: wrap;
     margin: 0 0 0 0;
   }

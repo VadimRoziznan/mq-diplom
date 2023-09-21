@@ -318,6 +318,23 @@ main {
   height: auto;
   margin: 0 0 0 0;
 }
+
+.category-list {
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.category-list__item {
+	display: inline-block;
+	list-style: none;
+}
+
+.category-list__item:nth-child(1n + 2) {
+  margin: 0 0 0 15px;
+}
+
 .category {
   vertical-align: top;
   display: inline-block;
@@ -332,9 +349,7 @@ main {
   text-decoration: none;
   list-style: none;
 }
-.category:nth-child(1n + 2) {
-  margin: 0 0 0 15px;
-}
+
 .category:hover {
   text-decoration: underline;
 }

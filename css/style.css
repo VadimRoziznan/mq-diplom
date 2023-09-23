@@ -34,18 +34,22 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
   
   z-index: -1;
 }
 .header:before {
   content: "";
   position: absolute;
+
   width: 100%;
-  min-width: 1660px;
-  /*height: 450px;*/
-  min-height: 450px;
+  height: 100%;
+  top: 0;
+  left: 0;
+
   background-color: #000000;
   opacity: 0.6;
+
   z-index: 0;
   
 }

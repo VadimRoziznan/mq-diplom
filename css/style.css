@@ -10,16 +10,19 @@
   font-style: normal;
 }
 
-body {
-  width: 100%;
-  min-width: 1660px;
-  height: auto;
+html {
+  width: 100vw;
+}
 
+body {
+  width: 100vw;
+  height: auto;
   margin: 0;
 }
 
 h1 {
   margin: 0;
+  
 }
 .header {
   width: 100%;
@@ -58,7 +61,7 @@ h1 {
 }
 .popup {
   visibility: hidden;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   box-sizing: border-box;
   padding-top: 50px;
@@ -197,6 +200,39 @@ h1 {
   color: #ffffff;
   font-family: "Open Sans Bold", sans-serif;
 }
+
+/* button close */
+
+.popup-close {
+  width: 1.4em;
+  height: 1em;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  margin: -590px 0 0 365px;
+}
+
+.popup-close:before,
+.popup-close:after {
+  content: "";
+  width: 1.4em;
+  height: 0.2em;
+  background-color: #ffffff;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.popup-close:before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.popup-close:after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
 .top-panel {
   display: flex;
   justify-content: space-between;
@@ -243,7 +279,7 @@ h1 {
 main {
   display: block;
   box-sizing: border-box;
-  width: 100%;
+  width: 100vw;
   margin-left: auto;
   margin-right: auto;
 }
@@ -304,14 +340,16 @@ main {
 .card {
   position: relative;
   display: flex;
+  justify-content: center;
   float: left;
-  width: 410px;
+  /*width: 410px;*/
+  width: 100%;
 
   height: 319px;
   background-color: #000000;
 }
 .card img {
-  width: 410px;
+  width: 100%;
   height: 319px;
   opacity: 0.6;
 }
@@ -403,8 +441,7 @@ main {
   height: auto;
 }
 .post img {
-  width: 381px;
-  height: 294px;
+  overflow: inherit;
   background-color: #eff6f1;
 }
 .post:nth-child(1n + 2) {
@@ -421,7 +458,7 @@ main {
   display: block;
   width: 367px;
   height: auto;
-  margin: 5px 0 30px 0;
+  margin: 5px 0 25px 0;
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
@@ -439,6 +476,7 @@ main {
   color: #888888;
   font-weight: 400;
   font-family: "Open Sans Regular";
+  margin: 0 0 0 -5px;
 }
 .autor {
   display: inline-block;
@@ -451,7 +489,7 @@ main {
   display: inline-block;
   width: 367px;
   height: auto;
-  margin-top: 40px;
+  margin-top: 45px;
   font-size: 15px;
   line-height: 22px;
   color: #0f0d0e;
@@ -461,7 +499,7 @@ main {
   margin-top: 20px;
 }
 p {
-  margin-block-start: 10px;
+  margin-block-start: 0;
   margin-block-end: 0;
 }
 .paragraph {
@@ -512,7 +550,7 @@ p {
   width: auto;
   height: auto;
   padding: 0;
-  margin: 0 0 0 10px;
+  margin: -5px 0 0 10px;
 }
 .publication-title {
   width: auto;
@@ -561,6 +599,20 @@ p {
 .search:hover {
   border-bottom: 1px solid #b59f5b;
 }
+
+.sign-text {
+  position: absolute;
+  box-sizing: border-box;
+  opacity: 0;
+  border: 1px solid black;
+  background-color: #f4f7f6;
+  box-shadow: 5px 5px 5px black;
+  padding: 5px;
+  font-family: "Open Sans Regular";
+}
+.sign:hover .sign-text {
+  opacity: 1;
+}
 .search-button {
   display: inline-block;
   box-sizing: border-box;
@@ -582,6 +634,7 @@ p {
 .search-button:hover {
   background-color: #323232;
 }
+
 .subscribe {
   margin: 0 auto 120px auto;
 }
@@ -747,10 +800,8 @@ sup {
   flex-wrap: nowrap;
 }
 .product {
-  display: block;
   width: 300px;
   height: auto;
-  position: relative;
   margin: 0 56px 0 56px;
 }
 .border {
@@ -758,11 +809,11 @@ sup {
   box-sizing: border-box;
   position: relative;
   width: 345px;
-  min-height: 265px;
-  height: auto;
+  height: calc(100% - 175px);
   border: 3px solid #b59f5b;
   margin-left: calc((345px - 300px) / -2);
   margin-top: -30px;
+  word-wrap: break-word;
 }
 .product-description {
   margin-top: 50px;
@@ -915,7 +966,7 @@ sup {
   .header:after {
     width: 100%;
     min-width: 768px;
-    height: 395px;
+    height: 100%;
   }
   .intro-title {
     width: 650px;
@@ -1138,7 +1189,8 @@ sup {
   .header {
     width: 100vw;
     min-width: 360px;
-    height: 635px;
+    min-height: 635px;
+    height: auto;
     background-image: url("../images/banner-mobile.jpg");
     background-size: cover;
     background-position: center;
@@ -1146,7 +1198,10 @@ sup {
   .header:before {
     width: 100vw;
     min-width: 360px;
-    height: 635px;
+    height: 100%;
+  }
+  .top-panel {
+    flex-direction: column-reverse;
   }
   .intro-title {
     margin: 0 auto 0 auto;
@@ -1164,13 +1219,7 @@ sup {
     margin: 225px auto 35px auto;
   }
   .menu {
-    display: flex;
-    flex-direction: column-reverse;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    width: 328px;
-    position: absolute;
+    width: 50px;
     margin: 30px 0 0 0;
   }
   .menu-button {
@@ -1179,7 +1228,8 @@ sup {
     position: absolute;
     width: 23px;
     height: 3px;
-    margin: 0 0 0 335px;
+    right: 0;
+    margin: 0 20px 0 0;
     color: white;
     border: none;
   }
@@ -1204,8 +1254,8 @@ sup {
   }
   .menu-list {
     padding: 0 0 0 0;
-    margin: 0 210px 0 0;
-    visibility: hidden;
+    margin: 0 0 0 0;
+    display: none;
   }
   .trend-title {
     font-size: 16px;
@@ -1422,7 +1472,8 @@ sup {
   }
   .product {
     display: block;
-    width: 300px;
+    max-width: 345px;
+    width: 320px;
     height: auto;
     margin: 0 0 25px 0;
   }
@@ -1434,7 +1485,7 @@ sup {
     box-sizing: border-box;
     width: 285px;
     height: 285px;
-    margin: 0 auto 0 auto;
+    margin: 0 auto 0 25px;
   }
   .product-description {
     margin: -2px 0 0 0;
@@ -1458,11 +1509,27 @@ sup {
     margin: 0 12px 0 0;
   }
   .social {
-    width: 330px;
+    width: 100%;
     height: 83px;
     margin: 5px auto 0 auto;
   }
   .copyrights {
     margin: 35px auto 40px auto;
+  }
+
+  .border {
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+    max-width: 345px;
+    width: 345px;
+    height: calc(100% - 275px);
+    border: 3px solid #b59f5b;
+
+    margin: -30px auto 0 auto;
+    word-wrap: break-word;
+  }
+  .footer {
+    min-width: 360px;
   }
 }

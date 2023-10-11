@@ -9,61 +9,59 @@
 </head>
 
 <body>
-  <div class="popup">
+  <div class="popup_hidden">
     <div class="popup-container">
       <div class="feedback">
         <h2 class="feedback-title">Ваш ФИДБЕк</h2>
         <div class="underlining"></div>
-      </div>
-      <div class="form-block">
-        <form class="popup-form">
-          <div class="form-group">
-            <label class="select-group">
-              <span class="select-label"> Как часто вы заходите на сайт?</span>
-              <select class="select">
-                <option value="first" selected>Почти каждый день</option>
-                <option value="second">Каждый день...</option>
-              </select>
-            </label>
-          </div>
-        </form>
-      </div>
-      <div class="form-block">
-        <div class="form-group">
+        <div class="form-block">
           <form class="popup-form">
-            <span class="select-label">Вы подписаны на e-mail рассылку?</span>
-            <div class="label-block">
-
-              <label class="radio-label">
-                <input type="radio" name="radio-answer" class="input-block" value="yes">
-                <span class="answer">Да</span>
-              </label>
-              <label class="radio-label">
-                <input type="radio" name="radio-answer" class="input-block" value="no">
-                <span class="answer">Нет</span>
+            <div class="form-group">
+              <label class="select-group">
+                <span class="select-label"> Как часто вы заходите на сайт?</span>
+                <select class="select">
+                  <option value="first" selected>Почти каждый день</option>
+                  <option value="second">Каждый день...</option>
+                </select>
               </label>
             </div>
+            <div class="form-block">
+              <div class="form-group">
+                <p class="select-label">Вы подписаны на e-mail рассылку?</p>
+                <div class="label-block">
+                  <label class="radio-label">
+                    <input type="radio" name="radio-answer" class="input-block" value="yes">
+                    <span class="answer">Да</span>
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="radio-answer" class="input-block" value="no">
+                    <span class="answer">Нет</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-block">
+              <div class="form-group">
+                <span class="select-label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+                <label>
+                  <textarea class="text-block" name="comment" cols="40" rows="3" placeholder="Может, больше рецептов?"></textarea>
+                </label>
+              </div>
+            </div>
+            <div class="form-block">
+              <button class="form-button" type="submit">
+                <span class="button-text">Отправить</span>
+              </button>
+            </div>
           </form>
+
         </div>
-      </div>
-      <div class="form-block">
-        <form class="popup-form">
-          <div class="form-group">
-            <span class="select-label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
-            <label>
-              <textarea class="text-block" name="comment" cols="40" rows="3" placeholder="Может, больше рецептов?"></textarea>
-            </label>
-          </div>
-        </form>
-      </div>
-      <div class="form-block">
-        <button class="form-button" type="submit">
-          <span class="button-text">Отправить</span>
-        </button>
       </div>
       <button class="popup-close" type="button"></button>
     </div>
+
   </div>
+
   <header class="header">
     <div class="top-panel">
       <img src="svg/noemi-logo.svg" class="header-logo" alt="Логотип компании Noemi">
@@ -189,7 +187,7 @@
               </ul>
             </div>
             <div class="annotations">
-              <a class="annotation" href="#">10 мест, ради которых стоит проснуться на рассвете</a>
+              <h2><a class="annotation" href="#">10 мест, ради которых стоит проснуться на рассвете</a></h2>
             </div>
             <div class="date">
               <p>10 июня 2019</p>
@@ -218,7 +216,7 @@
               </ul>
             </div>
             <div class="annotations">
-              <a class="annotation" href="#">ЙОга для начинающих в домашних условиях</a>
+              <h2><a class="annotation" href="#">ЙОга для начинающих в домашних условиях</a></h2>
             </div>
             <div class="date">
               <p>10 июня 2019</p>
@@ -244,7 +242,7 @@
 
             </div>
             <div class="annotations">
-              <a class="annotation" href="#">Лучшие музыкальные фестивали этого лета</a>
+              <h2><a class="annotation" href="#">Лучшие музыкальные фестивали этого лета</a></h2>
             </div>
             <div class="date">
               <p>10 июня 2019</p>
@@ -273,7 +271,7 @@
               </ul>
             </div>
             <div class="annotations">
-              <a class="annotation" href="#">Наукоёмкий подход к кулинарии</a>
+              <h2><a class="annotation" href="#">Наукоёмкий подход к кулинарии</a></h2>
             </div>
             <div class="date">
               <p>10 июня 2019</p>
@@ -303,7 +301,8 @@
                 </li>
               </ul>
             </div>
-            <div class="annotations"><a class="annotation" href="#">делаем модные принты на подушках для интерьера</a>
+            <div class="annotations">
+              <h2><a class="annotation" href="#">делаем модные принты на подушках для интерьера</a></h2>
             </div>
             <div class="date">
               <p>10 июня 2019</p>

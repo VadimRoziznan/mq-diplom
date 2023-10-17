@@ -17,7 +17,9 @@
 body {
   /*width: 100vw;
   height: auto;*/
-  margin: 0 0 0 0;
+  margin: 0 auto;
+}
+
 }
 
 h1 {
@@ -62,8 +64,9 @@ h2 {
   z-index: 0;
 }
 .popup_hidden {
-  visibility: hidden;
-  display: flex;
+	display: none;
+  /*visibility: hidden;
+  display: flex;*/
   justify-content: center;
   width: 100%;
   height: 100%;
@@ -266,6 +269,7 @@ h2 {
   z-index: 1;
 }
 .menu {
+	width: auto;
   margin: 27px 0 0 48px;
   font-size: 13px;
   text-transform: uppercase;
@@ -277,7 +281,7 @@ h2 {
 }
 .menu-list {
   display: flex;
-  margin-right: 150px;
+  /*margin-right: 150px;*/
   list-style: none;
 }
 .menu-list__item {
@@ -374,6 +378,7 @@ main {
   opacity: 0.6;
 }
 .info-block {
+	box-sizing: border-box;
   position: absolute;
   /*width: 290px;*/
   width: 70%;
@@ -431,7 +436,7 @@ main {
 }
 .preface__item {
   display: inline-block;
-  width: 295px;
+  width: auto;
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
@@ -445,14 +450,17 @@ main {
 }
 .content {
   display: flex;
-  width: 1170px;
+
+  max-width: 1170px;
+  width: auto;
   height: auto;
   flex-flow: row nowrap;
   justify-content: space-between;
   margin: 60px auto 60px auto;
 }
 .article {
-  width: 765px;
+  max-width: 765px;
+  width: auto;
   height: auto;
 }
 .post {
@@ -462,6 +470,8 @@ main {
   height: auto;
 }
 .post img {
+	width: auto;
+  height: auto;
   overflow: inherit;
   background-color: #eff6f1;
 }
@@ -535,6 +545,7 @@ p {
 }
 .side-bar-aside {
   /*width: 270px;*/
+  box-sizing: border-box;
   width: auto;
   height: auto;
 }
@@ -591,6 +602,7 @@ p {
 }
 .search {
   display: flex;
+
   box-sizing: border-box;
   flex-wrap: wrap;
   width: auto;
@@ -601,6 +613,7 @@ p {
 .search-field {
   box-sizing: border-box;
   width: 222px;
+  
   height: 48px;
   display: inline-block;
   vertical-align: middle;
@@ -664,7 +677,8 @@ p {
   display: flex;
   box-sizing: border-box;
   flex-wrap: wrap;
-  width: 270px;
+  max-width: 270px;
+  width: auto;
   height: 48px;
   background-color: #f4f7f6;
 }
@@ -672,6 +686,7 @@ p {
   display: inline-block;
   box-sizing: border-box;
   width: 270px;
+
   height: 48px;
   padding: 0 0 0 15px;
   margin: 0 0 15px 0;
@@ -815,7 +830,7 @@ sup {
 .products-box {
   display: flex;
   justify-content: center;
-  width: 1170px;
+  max-width: 1200px;
   height: auto;
   margin: 30px auto 0 auto;
   flex-direction: row;
@@ -824,13 +839,14 @@ sup {
 .product {
   width: 300px;
   height: auto;
-  margin: 0 56px 0 56px;
+  margin: 0 auto;
 }
 .border {
   display: block;
   box-sizing: border-box;
   position: relative;
-  width: 345px;
+  max-width: 345px;
+  width: auto;
   height: calc(100% - 175px);
   border: 3px solid #b59f5b;
   margin-left: calc((345px - 300px) / -2);
@@ -940,7 +956,7 @@ sup {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  width: 1170px;
+  width: auto;
   height: 83px;
   margin: 65px auto 0 auto;
   background-color: #f4f7f6;
@@ -1210,7 +1226,6 @@ sup {
   }
   .header {
     width: 100vw;
-    min-width: 360px;
     min-height: 635px;
     height: auto;
     background-image: url("../images/banner-mobile.jpg");
@@ -1219,7 +1234,6 @@ sup {
   }
   .header:before {
     width: 100vw;
-    min-width: 360px;
     height: 100%;
   }
   .top-panel {
@@ -1227,7 +1241,7 @@ sup {
   }
   .intro-title {
     margin: 0 auto 0 auto;
-    width: 328px;
+    width: auto;
     height: auto;
     font-size: 26px;
     line-height: 36px;
@@ -1236,7 +1250,7 @@ sup {
     display: flex;
     box-sizing: border-box;
     justify-content: center;
-    width: 328px;
+    width: auto;
     height: 60px;
     margin: 225px auto 35px auto;
   }
@@ -1288,11 +1302,11 @@ sup {
   }
   .trends-section {
     width: 100%;
-    min-width: 360px;
+    min-width: 320px;
   }
   .trend-cards {
     width: 100%;
-    min-width: 361px;
+    /*min-width: 361px;*/
     flex-wrap: wrap;
     margin: 0 0 0 0;
   }
@@ -1333,11 +1347,11 @@ sup {
     line-height: 20px;
   }
   .article {
-    width: 360px;
+    width: auto;
   }
   .content {
     display: flex;
-    width: 360px;
+    width: auto;
     height: auto;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -1345,11 +1359,11 @@ sup {
   }
   .post {
     flex-flow: row wrap;
-    width: 328px;
-    margin: 0 16px 0 16px;
+    width: auto;
+    margin: 0 auto;
   }
   .post img {
-    width: 328px;
+    width: 100%;
     height: 253px;
   }
   .post:nth-child(1n + 2) {
@@ -1359,13 +1373,13 @@ sup {
     margin: 13px 0 0 0;
   }
   .annotation {
-    width: 327px;
+    width: 320px;
     font-size: 16px;
     line-height: 20px;
     margin: 0 0 15px 0;
   }
   .text {
-    width: 327px;
+    width: 320px;
     height: auto;
     font-size: 14px;
     line-height: 20px;
@@ -1373,7 +1387,7 @@ sup {
   }
   .underline {
     display: block;
-    width: 329px;
+    width: 320px;
     height: 3px;
     margin: 0 auto 0 auto;
     background-color: #eeeeee;
@@ -1385,12 +1399,12 @@ sup {
   .paragraph {
     display: inline-block;
     box-sizing: border-box;
-    width: 327px;
+    width: 320px;
     height: auto;
     margin-top: 50px;
   }
   .side-bar-aside {
-    width: 360px;
+    width: 320px;
     margin: 35px 0 0 0;
   }
   .headline-title {
@@ -1401,7 +1415,7 @@ sup {
   .new-publications {
     display: flex;
     flex-flow: row nowrap;
-    width: 360px;
+    width: 320px;
     height: 70px;
     margin: 5px auto 0 auto;
     padding-top: 5px;
@@ -1425,38 +1439,42 @@ sup {
     margin: -5px 0 0 12px;
   }
   .search {
+  	box-sizing: border-box;
     flex-wrap: nowrap;
-    width: 330px;
+    width: 320px;
     margin: 60px auto 35px auto;
   }
   .search-field {
-    width: 282px;
+  	box-sizing: border-box;
+    width: 272px;
     margin: 0 auto 0 auto;
     padding: 0 0 0 17px;
   }
   .email {
-    width: 329px;
-    margin: 0 16px 0 16px;
+  	box-sizing: border-box;
+    width: 320px;
+    margin: 0 auto;
   }
   .email-field {
-    width: 329px;
+  	box-sizing: border-box;
+    width: 320px;
     height: 48px;
     margin: 0 0 17px 0;
     padding: 0 0 0 17px;
   }
   .email-button {
-    width: 330px;
+    width: 320px;
     height: 48px;
   }
   .email-button:hover {
-    width: 330px;
+    width: 320px;
   }
   .tags-block {
     margin: -18px auto 32px auto;
   }
   .tags-list {
-    width: 333px;
-    margin: 0 15px 0 15px;
+    width: 320px;
+    margin: 0 auto;
   }
   .tag-name {
     width: auto;
@@ -1472,13 +1490,13 @@ sup {
     margin-top: -3px;
   }
   .themse-name {
-    width: 330px;
+    width: 320px;
     height: 35px;
     padding: 0 0 0 0;
-    margin: 0 15px 0 15px;
+    margin: 0 auto;
   }
   .themse-name:nth-child(1n + 2) {
-    margin: 12px 15px 0 15px;
+    margin: 12px auto 0 auto;
   }
   sup {
     margin: 0 0 0 5px;
@@ -1489,7 +1507,7 @@ sup {
     margin: -21px 0 5px 0;
   }
   .products-box {
-    width: 330px;
+    width: 320px;
     flex-wrap: wrap;
     justify-content: center;
     margin: 28px auto 0 auto;
@@ -1509,11 +1527,11 @@ sup {
     box-sizing: border-box;
     width: 285px;
     height: 285px;
-    margin: 0 auto 0 25px;
+    margin: 0 auto;
   }
   .product-description {
     margin: -2px 0 0 0;
-    padding: 0 7px 27px 17px;
+    padding: 0 0 27px 0;
 
     border-color: #b59f5b;
   }
@@ -1546,7 +1564,7 @@ sup {
     box-sizing: border-box;
     position: relative;
     max-width: 345px;
-    width: 345px;
+    width: 320px;
     height: calc(100% - 275px);
     border: 3px solid #b59f5b;
 
@@ -1554,6 +1572,6 @@ sup {
     word-wrap: break-word;
   }
   .footer {
-    min-width: 360px;
+    min-width: 320px;
   }
 }

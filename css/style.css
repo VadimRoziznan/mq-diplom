@@ -15,8 +15,8 @@
 }
 */
 body {
-  /*width: 100vw;
-  height: auto;*/
+  width: 100%;
+  height: auto;
   margin: 0 auto;
 }
 
@@ -64,8 +64,7 @@ h2 {
   z-index: 0;
 }
 .popup_hidden {
-	display: none;
-  /*visibility: hidden;
+  visibility: visible;
   display: flex;*/
   justify-content: center;
   width: 100%;
@@ -258,6 +257,7 @@ h2 {
 }
 .top-panel {
   display: flex;
+  width: auto;
   justify-content: space-between;
   flex-wrap: nowrap;
   z-index: 1;
@@ -270,7 +270,7 @@ h2 {
 }
 .menu {
 	width: auto;
-  margin: 27px 0 0 48px;
+  margin: 27px 35px 0 48px;
   font-size: 13px;
   text-transform: uppercase;
   color: #ffffff;
@@ -281,6 +281,7 @@ h2 {
 }
 .menu-list {
   display: flex;
+  padding: 0;
   /*margin-right: 150px;*/
   list-style: none;
 }
@@ -381,7 +382,7 @@ main {
 	box-sizing: border-box;
   position: absolute;
   /*width: 290px;*/
-  width: 70%;
+  width: auto;
   height: auto;
   bottom: 0;
   margin: 0 25px 17px 25px;
@@ -851,10 +852,12 @@ sup {
   border: 3px solid #b59f5b;
   margin-left: calc((345px - 300px) / -2);
   margin-top: -30px;
+  margin-right: -15px;
   word-wrap: break-word;
 }
 .product-description {
   margin-top: 50px;
+
 }
 .product-img {
   display: block;
@@ -898,7 +901,7 @@ sup {
 }
 .price-buttom-box {
   display: flex;
-  width: 300px;
+  width: 285px;
   justify-content: space-between;
   bottom: 0px;
   margin: 24px 0 25px 0;
@@ -981,7 +984,7 @@ sup {
   font-weight: 700;
   font-family: "Open Sans Bold";
 }
-@media (min-width: 768px) and (max-width: 999px),
+@media (min-width: 768px) and (max-width: 1199px),
   (orientation: landscape) and (min-width: 641px) and (max-width: 1199px) {
   body {
     width: 100%;
@@ -1087,7 +1090,7 @@ sup {
     height: 247px;
   }
   .info-block {
-    /*width: 300px;*/
+    width: auto;
     height: auto;
     margin: 0 15px 15px 15px;
     padding: 15px 15px 0 30px;
@@ -1169,7 +1172,7 @@ sup {
     width: 300px;
     height: auto;
     position: relative;
-    margin: 0 0 25px 5px;
+    margin: 0 0 45px 5px;
   }
   .product:last-of-type {
     margin: 0 0 0 5px;
@@ -1191,6 +1194,7 @@ sup {
     margin-right: 10px;
   }
   .border {
+  	margin-left: -8px;
   }
   .border::before {
     width: 335px;

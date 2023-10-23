@@ -63,8 +63,10 @@ h2 {
 
   z-index: 0;
 }
-.popup_hidden {
-  visibility: hidden;
+._hidden {
+	display: none;
+}
+.popup {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -77,9 +79,11 @@ h2 {
   position: fixed;
   z-index: 999;
 }
-.popup_hidden:after {
+
+.popup:after {
   bgcolor: rgb(0, 0, 0, 0.75);
 }
+
 .popup-container {
   box-sizing: border-box;
   max-width: 390px;
@@ -90,6 +94,7 @@ h2 {
   background-color: #ffffff;
   position: relative;
 }
+
 .feedback {
   max-width: 390px;
   width: auto;
@@ -255,6 +260,7 @@ h2 {
 .popup-close:after {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
+
 
 .main-container {
 	max-width: 1200px;
